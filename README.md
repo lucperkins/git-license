@@ -20,7 +20,7 @@ As with any custom Git command, simply add the `git-license` file to any directo
 ```
 $ git clone https://github.com/lucperkins/git-license
 $ cd git-license
-$ cp git-license /usr/bin # or another dir in your PATH
+$ sudo cp git-license /usr/bin/git-license # or another dir in your PATH
 $ sudo chmod +x /usr/bin/git-license # or wherever you end putting it
 ```
 

@@ -1,0 +1,67 @@
+#!/bin/bash
+
+case $1 in
+  affero-gpl | affero)
+    curl https://raw.github.com/lucperkins/licenses/master/affero.txt > LICENSE
+    ;;
+  apache-v2 | apache)
+    curl https://raw.github.com/lucperkins/licenses/master/apache-v2.txt > LICENSE
+    ;;
+  artistic)
+    curl https://raw.github.com/lucperkins/licenses/master/artistic.txt > LICENSE
+    ;;
+  bsd-2-clause | bsd-2)
+    curl https://raw.github.com/lucperkins/licenses/master/bsd-2-clause.txt > LICENSE
+    ;;
+  bsd-3-clause | bsd-3)
+    curl https://raw.github.com/lucperkins/licenses/master/bsd-3-clause.txt > LICENSE
+    ;;
+  eclipse)
+    curl https://raw.github.com/lucperkins/licenses/master/eclipse.txt > LICENSE
+    ;;
+  gpl-v2)
+    curl https://raw.github.com/lucperkins/licenses/master/gpl-v2.txt > LICENSE
+    ;;
+  gpl-v3)
+    curl https://raw.github.com/lucperkins/licenses/master/gpl-v3.txt > LICENSE
+    ;;
+  lgpl-v2.1)
+    curl https://raw.github.com/lucperkins/licenses/master/lgpl-v2.txt > LICENSE
+    ;;
+  lgpl-v3)
+    curl https://raw.github.com/lucperkins/licenses/master/lgp-v3.txt > LICENSE
+    ;;
+  mit)
+    curl https://raw.github.com/lucperkins/licenses/master/mit.txt > LICENSE
+    ;;
+  mozilla)
+    curl https://raw.github.com/lucperkins/licenses/master/mozilla.txt > LICENSE
+    ;;
+  public-domain-cc0 | cc0)
+    curl https://raw.github.com/lucperkins/licenses/master/public-domain-cc0.txt > LICENSE
+    ;;
+  public-domain-unilicense | unilicense)
+    curl https://raw.github.com/lucperkins/licenses/master/public-domain-unilicense.txt > LICENSE
+    ;;
+  *)
+    echo "
+Available license names:
+
+  affero-gpl | affero
+  apache-v2 | apache
+  artistic
+  bsd-2-clause | bsd-2
+  bsd-3-clause | bsd-3
+  eclipse
+  gpl-v2
+  gpl-v3
+  lgpl-v2.1
+  lgpl-v3
+  mit | MIT
+  mozilla
+  public-domain-cc0 | cc0
+  public-domain-unilicense | unilicense
+
+For more information, see http://choosealicense.com/licenses/
+"
+esac

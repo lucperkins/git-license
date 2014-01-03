@@ -21,7 +21,7 @@ As with any custom Git command, simply add the `git-license` file to any directo
 $ git clone https://github.com/lucperkins/git-license
 $ cd git-license
 $ cp git-license /usr/bin # or another dir in your PATH
-$ sudo chmod +x /usr/bin/git-license
+$ sudo chmod +x /usr/bin/git-license # or wherever you end putting it
 ```
 
 At that point, you should be able to use `license` like any other Git command.

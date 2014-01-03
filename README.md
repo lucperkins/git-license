@@ -1,11 +1,11 @@
 git-license
 ===========
 
-This is a simple shell script for adding the appropriate `LICENSE` to the root of your Git repository. The list of licenses is drawn from GitHub's [Choose a License](http://choosealicense.com/).
+This is a simple shell script for adding the appropriate `LICENSE` to the root of your Git repository. The list of licenses is drawn from GitHub's [Choose a License](http://choosealicense.com/) page.
 
 ## Usage
 
-Couldn't be much more simple. Just use run the `git license` command and then the name of the license you wish to add, e.g.:
+Couldn't be much more simple. Just run the `git license` command and then the name of the license you wish to add, e.g.:
 
 ```bash
 $ git license mit

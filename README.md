@@ -13,6 +13,8 @@ $ git license mit
 
 This will add the MIT License. For a list of available licenses, simply run the `git license` command by itself.
 
+**Note**: If there's already a `LICENSE` file in the current directory, then running `git license` will overwrite it.
+
 ## Installation
 
 As with any custom Git command, simply add the `git-license` file to any directory in your `PATH` and make it executable (e.g. via `chmod +x`). The following should work for you:

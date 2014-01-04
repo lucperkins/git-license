@@ -1,50 +1,52 @@
 #!/bin/bash
 
+dest="$(git rev-parse --show-toplevel)/LICENSE"
+
 case $1 in
   affero-gpl | affero)
-    curl https://raw.github.com/lucperkins/licenses/master/affero.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/affero.txt > $dest
     ;;
   apache-v2 | apache)
-    curl https://raw.github.com/lucperkins/licenses/master/apache-v2.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/apache-v2.txt > $dest
     ;;
   artistic)
-    curl https://raw.github.com/lucperkins/licenses/master/artistic.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/artistic.txt > $dest
     ;;
   bsd-2-clause | bsd-2)
-    curl https://raw.github.com/lucperkins/licenses/master/bsd-2-clause.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/bsd-2-clause.txt > $dest
     ;;
   bsd-3-clause | bsd-3)
-    curl https://raw.github.com/lucperkins/licenses/master/bsd-3-clause.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/bsd-3-clause.txt > $dest
     ;;
   creative-commons | cc | c-c)
-    curl https://raw.github.com/lucperkins/licenses/master/creative-commons.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/creative-commons.txt > $dest
     ;;
   eclipse)
-    curl https://raw.github.com/lucperkins/licenses/master/eclipse.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/eclipse.txt > $dest
     ;;
   gpl-v2)
-    curl https://raw.github.com/lucperkins/licenses/master/gpl-v2.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/gpl-v2.txt > $dest
     ;;
   gpl-v3)
-    curl https://raw.github.com/lucperkins/licenses/master/gpl-v3.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/gpl-v3.txt > $dest
     ;;
   lgpl-v2.1)
-    curl https://raw.github.com/lucperkins/licenses/master/lgpl-v2.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/lgpl-v2.txt > $dest
     ;;
   lgpl-v3)
-    curl https://raw.github.com/lucperkins/licenses/master/lgp-v3.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/lgp-v3.txt > $dest
     ;;
   mit)
-    curl https://raw.github.com/lucperkins/licenses/master/mit.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/mit.txt > $dest
     ;;
   mozilla)
-    curl https://raw.github.com/lucperkins/licenses/master/mozilla.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/mozilla.txt > $dest
     ;;
   public-domain-cc0 | cc0)
-    curl https://raw.github.com/lucperkins/licenses/master/public-domain-cc0.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/public-domain-cc0.txt > $dest
     ;;
   public-domain-unilicense | unilicense)
-    curl https://raw.github.com/lucperkins/licenses/master/public-domain-unilicense.txt > LICENSE
+    curl https://raw.github.com/lucperkins/licenses/master/public-domain-unilicense.txt > $dest
     ;;
   *)
     echo "
@@ -69,3 +71,7 @@ Available license names:
 For more information, see http://choosealicense.com/licenses/
 "
 esac
+
+if [ -f $dest ]; then
+  git add $dest
+fi

@@ -26,4 +26,12 @@ $ sudo cp git-license /usr/bin/git-license # or another dir in your PATH
 $ sudo chmod +x /usr/bin/git-license # or wherever you end putting it
 ```
 
+Alternatively, you can simply run the `init` script that comes with the repo:
+
+```
+sh init.sh
+```
+
+That will do all of the work for you (which isn't very much!).
+
 At that point, you should be able to use `license` like any other Git command.

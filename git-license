@@ -15,7 +15,7 @@ case $1 in
     fetch_license apache-v2
     ;;
   artistic)
-    fetch_license affero artistic
+    fetch_license artistic
     ;;
   bsd-2-clause | bsd-2)
     fetch_license bsd-2-clause

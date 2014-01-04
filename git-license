@@ -16,6 +16,9 @@ case $1 in
   bsd-3-clause | bsd-3)
     curl https://raw.github.com/lucperkins/licenses/master/bsd-3-clause.txt > LICENSE
     ;;
+  creative-commons | cc | c-c)
+    curl https://raw.github.com/lucperkins/licenses/master/creative-commons.txt > LICENSE
+    ;;
   eclipse)
     curl https://raw.github.com/lucperkins/licenses/master/eclipse.txt > LICENSE
     ;;
@@ -52,6 +55,7 @@ Available license names:
   artistic
   bsd-2-clause | bsd-2
   bsd-3-clause | bsd-3
+  creative-commons | cc | c-c
   eclipse
   gpl-v2
   gpl-v3

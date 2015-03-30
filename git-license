@@ -4,7 +4,7 @@ dest="$(git rev-parse --show-toplevel)/LICENSE"
 
 function fetch_license()
 {
-  curl https://raw.github.com/lucperkins/licenses/master/$1.txt > $dest
+  curl -O https://raw.github.com/lucperkins/licenses/master/$1.txt > $dest
 }
 
 case $1 in

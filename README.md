@@ -1,6 +1,8 @@
 git-license
 ===========
 
+> **DEPRECATION WARNING** --- Nowadays there are better tools for this. I can't recommend using this project anymore. Instead, check out [license](https://nishanths.github.io/license/), [legit](https://github.com/captainsafia/legit), or something else.
+
 This is a simple shell script for adding the appropriate `LICENSE` to the root of your Git repository. The list of licenses is drawn from GitHub's [Choose a License](http://choosealicense.com/) page.
 
 ## Usage
